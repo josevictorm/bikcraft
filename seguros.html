@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguro | Bikcraft</title>
     <meta name="description" content="Termos e condições da bikcraft">
-    <link rel="preload" href="./css/style.min.css" as="style">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +56,7 @@
                         <li>Suporte 08h às 18h</li>
                         <li>Cobertura estadual</li>
                     </ul>
-                    <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+                    <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
                 </div>
 
                 <div class="seguros-item">
@@ -68,7 +70,7 @@
                         <li>Suporte 24h</li>
                         <li>Cobertura estadual</li>
                     </ul>
-                    <a class="botao" href="./orcamento.html">Inscreva-se</a>
+                    <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
                 </div>
             </div>
         </article>
@@ -125,10 +127,11 @@
             <h2 class="font-1-xxl cor-11">perguntas frequentes<span class="cor-p1">.</span></h2>
             <dl class="perguntas-item">
                 <div>
-                    <dt class="font-1-m-b">
-                        Qual forma de pagamento vocês aceitam?
+                    <dt>
+                        <button class="font-1-m-b" aria-expanded="true" aria-controls="pergunta1">Qual forma de
+                            pagamento vocês aceitam?</button>
                     </dt>
-                    <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa,
+                    <dd class="font-2-s cor-9 ativo" id="pergunta1">Aceitamos cartões de crédito com as bandeiras: Visa,
                         Mastercard, ELO
                         e
                         American
@@ -138,10 +141,11 @@
                     </dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b">
-                        Como posso entrar em contato?
+                    <dt>
+                        <button class="font-1-m-b" aria-expanded="false" aria-controls="pergunta2">
+                            Como posso entrar em contato?</button>
                     </dt>
-                    <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa,
+                    <dd class="font-2-s cor-9" id="pergunta2">Aceitamos cartões de crédito com as bandeiras: Visa,
                         Mastercard, ELO
                         e
                         American
@@ -151,10 +155,11 @@
                     </dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b">
-                        Vocês possuem algum desconto?
+                    <dt>
+                        <button class="font-1-m-b" aria-expanded="false" aria-controls="pergunta3">
+                            Vocês possuem algum desconto?</button>
                     </dt>
-                    <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa,
+                    <dd class="font-2-s cor-9" id="pergunta3">Aceitamos cartões de crédito com as bandeiras: Visa,
                         Mastercard, ELO
                         e
                         American
@@ -164,10 +169,11 @@
                     </dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b">
-                        Qual a garantia que possuo?
+                    <dt>
+                        <button class="font-1-m-b" aria-expanded="false" aria-controls="pergunta4">
+                            Qual a garantia que possuo?</button>
                     </dt>
-                    <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa,
+                    <dd class="font-2-s cor-9" id="pergunta4">Aceitamos cartões de crédito com as bandeiras: Visa,
                         Mastercard, ELO
                         e
                         American
@@ -177,10 +183,11 @@
                     </dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b">
-                        Posso parcelar no boleto?
+                    <dt>
+                        <button class="font-1-m-b" aria-expanded="false" aria-controls="pergunta5">
+                            Posso parcelar no boleto?</button>
                     </dt>
-                    <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa,
+                    <dd class="font-2-s cor-9" id="pergunta5">Aceitamos cartões de crédito com as bandeiras: Visa,
                         Mastercard, ELO
                         e
                         American
@@ -190,10 +197,11 @@
                     </dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b">
-                        Quantas trocas posso fazer ao ano?
+                    <dt>
+                        <button class="font-1-m-b" aria-expanded="false" aria-controls="pergunta6">
+                            Quantas trocas posso fazer ao ano?</button>
                     </dt>
-                    <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa,
+                    <dd class="font-2-s cor-9" id="pergunta6">Aceitamos cartões de crédito com as bandeiras: Visa,
                         Mastercard, ELO
                         e
                         American
@@ -244,6 +252,7 @@
             <p class="font-2-m cor-6 footer-copy">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

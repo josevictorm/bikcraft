@@ -20,10 +20,12 @@
 .bicicleta-imagens img {
 	flex: 1;
 	min-width: 200px;
+	cursor: pointer;
 }
 
 .bicicleta-imagens img:first-child {
 	min-width: 100%;
+	cursor: initial;
 }
 
 .bicicleta-conteudo > p {
